@@ -140,7 +140,7 @@ function draw(data) {
     var area = d3.area()
         .curve(d3.curveCardinal)
         .x(function (d) {
-            return (d.data[0].x);
+            return (d.data.x);
         })
         .y0(function (d) {
             return d[0];
@@ -177,7 +177,7 @@ function draw(data) {
 // =============== Get BOUNDARY and LAYERPATH ===============
     const lineCardinal = d3.line()
         .x(function (d) {
-            return d.data[0].x;
+            return d.data.x;
         })
         .y(function (d) {
             return d[1];
@@ -216,10 +216,7 @@ function draw(data) {
 
     curve.enter()
         .append('path')
-        .attr('d',d => {
-            console.log(d);
-            return area;
-        })
+        .attr('d',area)
         .style('fill', function (d, i) {
             return color(i);
         })
@@ -229,10 +226,7 @@ function draw(data) {
         .attr('stroke-width', 0)
         .attr("topic", (d, i) => topics[i]);
 
-    curve.attr("d", d => {
-        console.log(d);
-        return area;
-    })
+    curve.attr("d", area)
         .style('fill', function (d, i) {
             return color(i);
         })
@@ -259,6 +253,7 @@ function draw(data) {
 
     allW = JSON.parse(JSON.stringify(allWords));
 
+    console.log(allW);
     opacity = d3.scaleLog()
         .domain([minFreq, maxFreq])
         .range([0.4, 1]);
