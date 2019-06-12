@@ -1,11 +1,10 @@
 // var fileList = ["WikiNews","Huffington","CrooksAndLiars","EmptyWheel","Esquire","FactCheck"
 //                 ,"VIS_papers","IMDB","PopCha","Cards_PC","Cards_Fries"]
 var svg = d3.select("body").append('svg')
-    .attr({
-        id: "mainsvg",
-        width: 1400,
-        height: 660
-    });
+    .attr("id", "mainsvg")
+    .attr("width", 1400)
+    .attr("height", 660);
+
 var fileList = ["WikiNews", "Huffington", "CrooksAndLiars", "EmptyWheel", "Esquire", "FactCheck", "VIS_papers", "IMDB", "PopCha", "Cards_PC", "Cards_Fries", "QuantumComputing"]
 
 var initialDataset = "EmptyWheel";
@@ -13,7 +12,7 @@ var categories = ["person", "location", "organization", "miscellaneous"];
 
 var fileName;
 
-var opacity, layerPath, maxFreq;
+var opacity, layerPath, maxFreq, minFreq;
 
 var axisGroup = svg.append('g').attr("id", "axisGroup");
 var xGridlinesGroup = svg.append('g').attr("id", "xGridlinesGroup");
@@ -115,18 +114,19 @@ function draw(data) {
     const margins = {left: 20, top: 20, right: 10, bottom: 30};
     var width = globalWidth - (margins.left + margins.top);
     var height = globalHeight - (+margins.top + margins.bottom + axisPadding + legendHeight);
-    var ws = d3.layout.wordStream()
-            .size([width, height])
-            .fontScale(d3.scale.linear())
-            .minFontSize(globalMinFont)
-            .maxFontSize(globalMaxFont)
-            .data(data)
-            .flag(globalFlag)
+    var ws = d3.wordStream()
+        .size([width, height])
+        .fontScale(d3.scaleLinear())
+        .minFontSize(globalMinFont)
+        .maxFontSize(globalMaxFont)
+        .data(data)
+        .flag(globalFlag)
     ;
     var boxes = ws.boxes();
     var minSud = ws.minSud();
     var maxSud = ws.maxSud();
     maxFreq = ws.maxFreq();
+    minFreq = ws.minFreq();
 
     //set svg data.
     svg
@@ -137,16 +137,16 @@ function draw(data) {
             height: globalHeight,
         });
 
-    var area = d3.svg.area()
-        .interpolate(interpolation)
+    var area = d3.area()
+        .curve(d3.curveCardinal)
         .x(function (d) {
-            return (d.x);
+            return (d.data[0].x);
         })
         .y0(function (d) {
-            return d.y0;
+            return d[0];
         })
         .y1(function (d) {
-            return (d.y0 + d.y);
+            return d[1];
         });
 
     //Display time axes
@@ -155,16 +155,16 @@ function draw(data) {
         dates.push(row.date);
     });
 
-    var xAxisScale = d3.scale.ordinal().domain(dates).rangeBands([0, width]);
-    var xAxis = d3.svg.axis().orient('bottom').scale(xAxisScale);
+    var xAxisScale = d3.scaleOrdinal().domain(dates).range([0, width]);
+    var xAxis = d3.axisBottom(xAxisScale);
 
     axisGroup.attr('transform', 'translate(' + (margins.left) + ',' + (height + margins.top + axisPadding + legendHeight) + ')');
     var axisNodes = axisGroup.call(xAxis);
     styleAxis(axisNodes);
 
     //Display the vertical gridline
-    var xGridlineScale = d3.scale.ordinal().domain(d3.range(0, dates.length + 1)).rangeBands([0, width + width / boxes.data.length]);
-    var xGridlinesAxis = d3.svg.axis().orient('bottom').scale(xGridlineScale);
+    var xGridlineScale = d3.scaleOrdinal().domain(d3.range(0, dates.length + 1)).range([0, width + width / boxes.data.length]);
+    var xGridlinesAxis = d3.axisBottom(xGridlineScale);
 
     xGridlinesGroup.attr('transform', 'translate(' + (margins.left - width / boxes.data.length / 2) + ',' + (height + margins.top + axisPadding + legendHeight + margins.bottom) + ')');
     var gridlineNodes = xGridlinesGroup.call(xGridlinesAxis.tickSize(-height - axisPadding - legendHeight - margins.bottom, 0, 0).tickFormat(''));
@@ -175,14 +175,14 @@ function draw(data) {
     var wordStreamG = mainGroup.append('g').attr("id", "wordStreamG");
 
 // =============== Get BOUNDARY and LAYERPATH ===============
-    const lineCardinal = d3.svg.line()
+    const lineCardinal = d3.line()
         .x(function (d) {
-            return d.x;
+            return d.data[0].x;
         })
         .y(function (d) {
-            return d.y;
+            return d[1];
         })
-        .interpolate("cardinal");
+        .curve(d3.curveCardinal);
 
     var boundary = [];
     for (var i = 0; i < boxes.layers[0].length; i++) {
@@ -216,42 +216,39 @@ function draw(data) {
 
     curve.enter()
         .append('path')
-        .attr('d', area)
+        .attr('d',d => {
+            console.log(d);
+            return area;
+        })
         .style('fill', function (d, i) {
             return color(i);
         })
-        .attr({
-            "class": "curve",
-            'fill-opacity': 0,
-            stroke: 'black',
-            'stroke-width': 0,
-            topic: function (d, i) {
-                return topics[i];
-            }
-        });
+        .attr("class", "curve")
+        .attr('fill-opacity', 0)
+        .attr("stroke", "black")
+        .attr('stroke-width', 0)
+        .attr("topic", (d, i) => topics[i]);
 
-    curve.attr("d", area)
+    curve.attr("d", d => {
+        console.log(d);
+        return area;
+    })
         .style('fill', function (d, i) {
             return color(i);
         })
-        .attr({
-            'fill-opacity': 0,
-            stroke: 'black',
-            'stroke-width': 0,
-            topic: function (d, i) {
-                return topics[i];
-            }
-        });
+        .attr('fill-opacity', 0)
+        .attr("stroke", "black")
+        .attr('stroke-width', 0)
+        .attr("topic", (d, i) => topics[i]);
+    ;
 
 
     // ============= Get LAYER PATH ==============
 
     layerPath = mainGroup.selectAll("path").append("path")
         .attr("d", combined)
-        .attr({
-            'fill-opacity': 0,
-            'stroke-opacity': 0,
-        });
+        .attr("fill-opacity", 0)
+        .attr('stroke-opacity', 0);
 
     var allWords = [];
     d3.map(boxes.data, function (row) {
@@ -262,8 +259,8 @@ function draw(data) {
 
     allW = JSON.parse(JSON.stringify(allWords));
 
-    opacity = d3.scale.log()
-        .domain([minSud, maxSud])
+    opacity = d3.scaleLog()
+        .domain([minFreq, maxFreq])
         .range([0.4, 1]);
 
     var lineScale;
@@ -336,55 +333,48 @@ function draw(data) {
         texts.exit().remove();
 
         var textEnter = texts.enter().append('g')
-            .attr({
-                transform: function (d) {
-                    return 'translate(' + d.x + ', ' + d.y + ')rotate(' + d.rotate + ')';
-                }
+            .attr("transform", function (d) {
+                return 'translate(' + d.x + ', ' + d.y + ')rotate(' + d.rotate + ')';
             })
             .attr("class", "word")
-            .append('text')
+            .append('text');
 
         textEnter
             .text(function (d) {
                 return d.text;
             })
-            .attr({
-                "id": d => d.id,
-                "class": "textData",
-                'font-family': font,
-                'font-size': function (d) {
-                    return d.fontSize;
-                },
-                "fill": function (d, i) {
-                    return color(categories.indexOf(d.topic));
-                },
-                "fill-opacity": function (d) {
-                    return opacity(d.sudden);
-                },
-                'text-anchor': 'middle',
-                'alignment-baseline': 'middle',
-                topic: function (d) {
-                    return d.topic;
-                },
-                visibility: function (d) {
-                    return d.placed ? "visible" : "hidden";
-                }
+            .attr("id", d => d.id,)
+            .attr("class", "textData")
+            .attr('font-family', font)
+            .attr('font-size', function (d) {
+                return d.fontSize;
+            })
+            .attr("fill", function (d, i) {
+                return color(categories.indexOf(d.topic));
+            })
+            .attr("fill-opacity", function (d) {
+                return opacity(d.sudden);
+            })
+            .attr('text-anchor', 'middle')
+            .attr('alignment-baseline', 'middle')
+            .attr("topic", function (d) {
+                return d.topic;
+            })
+            .attr("visibility", function (d) {
+                return d.placed ? "visible" : "hidden";
             });
 
         texts.transition().duration(800)
-            .attr({
-                transform: function (d) {
-                    return 'translate(' + d.x + ', ' + d.y + ')rotate(' + d.rotate + ')';
-                }
+            .attr("transform", function (d) {
+                return 'translate(' + d.x + ', ' + d.y + ')rotate(' + d.rotate + ')';
             })
+
             .select("text")
             .attr('font-size', function (d) {
                 return d.fontSize;
             })
-            .attr({
-                visibility: function (d) {
-                    return d.placed ? "visible" : "hidden";
-                }
+            .attr("visibility", function (d) {
+                return d.placed ? "visible" : "hidden"
             });
 
         // texts.style("text-decoration", "underline");
