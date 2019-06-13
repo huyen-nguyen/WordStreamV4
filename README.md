@@ -1,8 +1,12 @@
-# WordStream
+# WordStream V4
 
-Demo: https://nnhuyen.github.io/WordStream/
+Update: 
 
-Video: https://nnhuyen.github.io/WordStream/video.html
+Demo: https://nnhuyen.github.io/WordStreamV4/
+
+Video: https://nnhuyen.github.io/WordStreamV4/video.html
+
+___
 
 [![WS](https://github.com/nnhuyen/WordStream/blob/master/images/Huffington.png)](https://www.youtube.com/watch?v=DwaDMPhi2Ec "Everything Is AWESOME")
 
