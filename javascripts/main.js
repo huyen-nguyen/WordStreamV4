@@ -132,10 +132,8 @@ function draw(data) {
     svg
         .transition()
         .duration(300)
-        .attr({
-            width: globalWidth,
-            height: globalHeight,
-        });
+        .attr("width", globalWidth)
+        .attr("height", globalHeight);
 
     var area = d3.area()
         .curve(d3.curveCardinal)
@@ -155,7 +153,7 @@ function draw(data) {
         dates.push(row.date);
     });
 
-    var xAxisScale = d3.scaleOrdinal().domain(dates).range([0, width]);
+    var xAxisScale = d3.scaleBand().domain(dates).rangeRound([0, width]);
     var xAxis = d3.axisBottom(xAxisScale);
 
     axisGroup.attr('transform', 'translate(' + (margins.left) + ',' + (height + margins.top + axisPadding + legendHeight) + ')');
@@ -163,7 +161,7 @@ function draw(data) {
     styleAxis(axisNodes);
 
     //Display the vertical gridline
-    var xGridlineScale = d3.scaleOrdinal().domain(d3.range(0, dates.length + 1)).range([0, width + width / boxes.data.length]);
+    var xGridlineScale = d3.scaleBand().domain(d3.range(0, dates.length + 1)).rangeRound([0, width + width / boxes.data.length]);
     var xGridlinesAxis = d3.axisBottom(xGridlineScale);
 
     xGridlinesGroup.attr('transform', 'translate(' + (margins.left - width / boxes.data.length / 2) + ',' + (height + margins.top + axisPadding + legendHeight + margins.bottom) + ')');
@@ -253,72 +251,12 @@ function draw(data) {
 
     allW = JSON.parse(JSON.stringify(allWords));
 
-    console.log(allW);
     opacity = d3.scaleLog()
         .domain([minFreq, maxFreq])
         .range([0.4, 1]);
 
     var lineScale;
-    if (fileName.indexOf("Huffington") >= 0) {
-        d3.json("data/linksHuff2012.json", function (error, rawLinks) {
-            const threshold = 5;
-            const links = rawLinks.filter(d => d.weight > threshold);
-            var isRel = document.getElementById("rel").checked;
-
-            links.forEach(d => {
-                d.sourceID = d.sourceID.split(".").join("_").split(" ").join("_");
-                d.targetID = d.targetID.split(".").join("_").split(" ").join("_");
-            });
-            let visibleLinks = [];
-
-            // select only links with: word place = true and have same id
-            links.forEach(d => {
-                let s = allWords.find(w => (w.id === d.sourceID) && (w.placed === true));
-                let t = allWords.find(w => (w.id === d.targetID) && (w.placed === true));
-                if ((s !== undefined) && (t !== undefined)) {
-                    visibleLinks.push({
-                        sourceX: s.x,
-                        sourceY: s.y,
-                        targetX: t.x,
-                        targetY: t.y,
-                        weight: d.weight,
-                        sourceID: d.sourceID,
-                        targetID: d.targetID,
-                        id: d.sourceID + "_" + d.targetID
-                    });
-                }
-            });
-
-            lineScale = d3.scale.linear()
-                .domain(d3.extent(visibleLinks, d => d.weight))
-                .range([0.5, 3]);
-
-            opacScale = d3.scale.linear()
-                .domain(d3.extent(visibleLinks, d => d.weight))
-                .range([0.5, 1]);
-
-            var connection = mainGroup.selectAll(".connection").data(visibleLinks, d => d.id);
-            connection.exit().remove();
-
-            connection.enter()
-                .append("line")
-                .attr("class", "connection");
-
-            connection.transition()
-                .duration(800)
-                .attr("opacity", isRel ? 1 : 0)
-                .attr({
-                    "x1": d => d.sourceX,
-                    "y1": d => d.sourceY,
-                    "x2": d => d.targetX,
-                    "y2": d => d.targetY,
-                    "stroke": "#444444",
-                    "stroke-opacity": d => opacScale(d.weight),
-                    "stroke-width": d => lineScale(d.weight)
-                });
-            drawWords();
-        });
-    } else drawWords();
+    drawWords();
 
     function drawWords() {
         var prevColor;
@@ -348,7 +286,7 @@ function draw(data) {
                 return color(categories.indexOf(d.topic));
             })
             .attr("fill-opacity", function (d) {
-                return opacity(d.sudden);
+                return opacity(d.frequency);
             })
             .attr('text-anchor', 'middle')
             .attr('alignment-baseline', 'middle')
@@ -372,8 +310,6 @@ function draw(data) {
                 return d.placed ? "visible" : "hidden"
             });
 
-        // texts.style("text-decoration", "underline");
-
         mainGroup.selectAll(".connection").on("mouseover", function () {
             var thisLink = d3.select(this);
             thisLink.style('cursor', 'crosshair');
@@ -385,17 +321,15 @@ function draw(data) {
 
             thisLink.attr("stroke-width", 4);
 
-            sourceText.attr({
-                stroke: prevSourceColor,
-                fill: prevSourceColor,
-                'stroke-width': 1.5
-            });
+            sourceText
+                .attr("stroke", prevSourceColor)
+                .attr("fill", prevSourceColor)
+                .attr('stroke-width', 1.5);
 
-            targetText.attr({
-                stroke: prevTargetColor,
-                fill: prevTargetColor,
-                'stroke-width': 1.5
-            });
+            targetText
+                .attr("stroke", prevTargetColor)
+                .attr("fill", prevTargetColor)
+                .attr('stroke-width', 1.5);
         });
 
         mainGroup.selectAll(".connection").on("mouseout", function () {
@@ -406,15 +340,13 @@ function draw(data) {
 
             thisLink.attr("stroke-width", lineScale(thisLink[0][0].__data__.weight));
 
-            sourceText.attr({
-                stroke: 'none',
-                'stroke-width': 0
-            });
+            sourceText
+                .attr("stroke", "none")
+                .attr('stroke-width', 0);
 
-            targetText.attr({
-                stroke: 'none',
-                'stroke-width': 0
-            });
+            targetText
+                .attr("stroke", "none")
+                .attr('stroke-width', 0);
         });
 
         //Highlight
@@ -427,10 +359,9 @@ function draw(data) {
             var allTexts = mainGroup.selectAll('.textData').filter(t => {
                 return t && t.text === text && t.topic === topic;
             });
-            allTexts.attr({
-                stroke: prevColor,
-                'stroke-width': 1
-            });
+            allTexts
+                .attr("stroke", prevColor)
+                .attr("stroke-width", 1) ;
         });
         mainGroup.selectAll('.textData').on('mouseout', function () {
             var thisText = d3.select(this);
@@ -440,10 +371,9 @@ function draw(data) {
             var allTexts = mainGroup.selectAll('.textData').filter(t => {
                 return t && !t.cloned && t.text === text && t.topic === topic;
             });
-            allTexts.attr({
-                stroke: 'none',
-                'stroke-width': '0'
-            });
+            allTexts
+                .attr("stroke", "none")
+                .attr("stroke-width", 0);
         });
         //Click
         mainGroup.selectAll('.textData').on('click', function () {
@@ -452,46 +382,43 @@ function draw(data) {
             var topic = thisText.attr('topic');
             var allTexts = mainGroup.selectAll('.textData').filter(t => {
                 return t && t.text === text && t.topic === topic;
-            });
+            })._groups;
+            console.log(topic);
             //Select the data for the stream layers
-            var streamLayer = d3.select("path[topic='" + topic + "']")[0][0].__data__;
+            var streamLayer = d3.select("path[topic='" + topic + "']").data()[0];
             //Push all points
             var points = Array();
             //Initialize all points
-            streamLayer.forEach(elm => {
-                points.push({
-                    x: elm.x,
-                    y0: elm.y0 + elm.y,
-                    y: 0//zero as default
-                });
+            streamLayer.forEach((elm,i) => {
+                let item = [];
+                
             });
             allTexts[0].forEach(t => {
                 var data = t.__data__;
                 var fontSize = data.fontSize;
                 //The point
                 var thePoint = points[data.timeStep + 1];
-                ;//+1 since we added 1 to the first point and 1 to the last point.
+                //+1 since we added 1 to the first point and 1 to the last point.
                 thePoint.y = -data.streamHeight;
                 //Set it to visible.
                 //Clone the nodes.
                 var clonedNode = t.cloneNode(true);
-                d3.select(clonedNode).attr({
-                    visibility: "visible",
-                    stroke: 'none',
-                    'stroke-size': 0,
-                });
+                d3.select(clonedNode)
+                    .attr("visibility", "visible")
+                    .attr("stroke", 'none')
+                    .attr("stroke-size", 0);
+
                 var clonedParentNode = t.parentNode.cloneNode(false);
                 clonedParentNode.appendChild(clonedNode);
 
                 t.parentNode.parentNode.appendChild(clonedParentNode);
-                d3.select(clonedParentNode).attr({
-                    cloned: true,
-                    topic: topic
-                }).transition().duration(300).attr({
-                    transform: function (d, i) {
-                        return 'translate(' + thePoint.x + ',' + (thePoint.y0 + thePoint.y - fontSize / 2) + ')';
-                    },
-                });
+                d3.select(clonedParentNode)
+                    .attr("cloned", true)
+                    .attr("topic", topic)
+                   .transition().duration(300)
+                    .attr("transform", function (d, i) {
+                        return 'translate(' + thePoint.data.x + ',' + (thePoint[1] - fontSize / 2) + ')';
+                    });
             });
             //Add the first and the last points
             points[0].y = points[1].y;//First point
@@ -501,13 +428,11 @@ function draw(data) {
                 .datum(points)
                 .attr('d', area)
                 .style('fill', prevColor)
-                .attr({
-                    'fill-opacity': prevColor,
-                    stroke: 'black',
-                    'stroke-width': 0.3,
-                    topic: topic,
-                    wordStream: true
-                });
+                .attr("fill-opacity", 1)
+                .attr("stroke", 'black')
+                .attr('stroke-width', 0.3)
+                .attr("topic", topic)
+                .attr("wordStream", true);
             //Hide all other texts
             var allOtherTexts = mainGroup.selectAll('.textData').filter(t => {
                 return t && !t.cloned && t.topic === topic;
@@ -518,9 +443,8 @@ function draw(data) {
             d3.select("path[topic='" + topic + "']").on('click', function () {
                 mainGroup.selectAll('.textData').filter(t => {
                     return t && !t.cloned && t.placed && t.topic === topic;
-                }).attr({
-                    visibility: 'visible'
-                });
+                })
+                    .attr("visibility", "visible");
                 //Remove the cloned element
                 document.querySelectorAll("g[cloned='true'][topic='" + topic + "']").forEach(node => {
                     node.parentNode.removeChild(node);
