@@ -123,8 +123,8 @@ function draw(data) {
         .flag(globalFlag)
     ;
     var boxes = ws.boxes();
-    var minSud = ws.minSud();
-    var maxSud = ws.maxSud();
+    // var minSud = ws.minSud();
+    // var maxSud = ws.maxSud();
     maxFreq = ws.maxFreq();
     minFreq = ws.minFreq();
 
@@ -156,7 +156,8 @@ function draw(data) {
     var xAxisScale = d3.scaleBand().domain(dates).rangeRound([0, width]);
     var xAxis = d3.axisBottom(xAxisScale);
 
-    axisGroup.attr('transform', 'translate(' + (margins.left) + ',' + (height + margins.top + axisPadding + legendHeight) + ')');
+    axisGroup
+        .attr('transform', 'translate(' + (margins.left) + ',' + (height + margins.top + axisPadding + legendHeight) + ')');
     var axisNodes = axisGroup.call(xAxis);
     styleAxis(axisNodes);
 
@@ -165,7 +166,10 @@ function draw(data) {
     var xGridlinesAxis = d3.axisBottom(xGridlineScale);
 
     xGridlinesGroup.attr('transform', 'translate(' + (margins.left - width / boxes.data.length / 2) + ',' + (height + margins.top + axisPadding + legendHeight + margins.bottom) + ')');
-    var gridlineNodes = xGridlinesGroup.call(xGridlinesAxis.tickSize(-height - axisPadding - legendHeight - margins.bottom, 0, 0).tickFormat(''));
+    var gridlineNodes = xGridlinesGroup
+        .call(xGridlinesAxis
+            .tickSize(-height - axisPadding - legendHeight - margins.bottom, 0, 0)
+            .tickFormat(''));
     styleGridlineNodes(gridlineNodes);
 
     //Main group
@@ -391,7 +395,10 @@ function draw(data) {
             //Initialize all points
             streamLayer.forEach((elm,i) => {
                 let item = [];
-                
+                item[0] = elm[1];
+                item[1] = elm[1];
+                item.data = elm.data;
+                points.push(item);
             });
             allTexts[0].forEach(t => {
                 var data = t.__data__;
@@ -399,7 +406,7 @@ function draw(data) {
                 //The point
                 var thePoint = points[data.timeStep + 1];
                 //+1 since we added 1 to the first point and 1 to the last point.
-                thePoint.y = -data.streamHeight;
+                thePoint[1] = thePoint[0]-data.streamHeight;
                 //Set it to visible.
                 //Clone the nodes.
                 var clonedNode = t.cloneNode(true);
@@ -421,8 +428,8 @@ function draw(data) {
                     });
             });
             //Add the first and the last points
-            points[0].y = points[1].y;//First point
-            points[points.length - 1].y = points[points.length - 2].y;//Last point
+            points[0][1] = points[1][1];//First point
+            points[points.length - 1][1] = points[points.length - 2][1];//Last point
             //Append stream
             wordStreamG.append('path')
                 .datum(points)
@@ -463,47 +470,44 @@ function draw(data) {
             .attr('transform', function (d, i) {
                 return 'translate(' + 10 + ',' + (i * legendFontSize) + ')';
             });
-        legendNodes.append('circle').attr({
-            r: 5,
-            fill: function (d, i) {
-                return color(i);
-            },
-            'fill-opacity': 1,
-            stroke: 'black',
-            'stroke-width': .5,
-        });
-        legendNodes.append('text').text(function (d) {
-            return d;
-        }).attr({
-            'font-size': legendFontSize,
-            'alignment-baseline': 'middle',
-            dx: 8
-        });
+        legendNodes.append('circle')
+            .attr("r", 5)
+            .attr("fill", (d,i) => color(i))
+            .attr('fill-opacity', 1)
+            .attr("stroke", "black")
+            .attr("stroke-width", 0.5);
+
+        legendNodes.append('text')
+            .text(d => d)
+            .attr('font-size', legendFontSize)
+            .attr('alignment-baseline', "middle")
+            .attr("dx", 8);
+
         spinner.stop();
     };
 }
 
 function styleAxis(axisNodes) {
-    axisNodes.selectAll('.domain').attr({
-        fill: 'none'
-    });
-    axisNodes.selectAll('.tick line').attr({
-        fill: 'none',
-    });
-    axisNodes.selectAll('.tick text').attr({
-        'font-family': 'serif',
-        'font-size': 15
-    });
+    axisNodes.selectAll('.domain')
+        .attr("fill", "none")
+        .attr("stroke-opacity", 0);
+
+    axisNodes.selectAll('.tick line')
+        .attr("fill", "none")
+        .attr("stroke-opacity", 0);
+
+    axisNodes.selectAll('.tick text')
+        .attr('font-family', 'serif')
+        .attr('font-size', 15);
 }
 
 function styleGridlineNodes(gridlineNodes) {
-    gridlineNodes.selectAll('.domain').attr({
-        fill: 'none',
-        stroke: 'none'
-    });
-    gridlineNodes.selectAll('.tick line').attr({
-        fill: 'none',
-        'stroke-width': 0.7,
-        stroke: 'lightgray'
-    });
+    gridlineNodes.selectAll('.domain')
+        .attr("fill", "none")
+        .attr("stroke", "none");
+
+    gridlineNodes.selectAll('.tick line')
+        .attr("fill", "none")
+        .attr("stroke-width", 0.7)
+        .attr("stroke", 'lightgray');
 }
