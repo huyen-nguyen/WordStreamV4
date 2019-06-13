@@ -1,9 +1,13 @@
 function computeMetric() {
+    let compact = getCompactness(allW, layerPath);
+    let display = getDisplayRate(allW, maxFreq);
     var metValue = [getTfidf().toFixed(2),
-        getCompactness(allW, layerPath)[0].toFixed(2),
-        getCompactness(allW, layerPath)[1].toFixed(2),
-        getDisplayRate(allW, maxFreq)[0].toFixed(2),
-        getDisplayRate(allW, maxFreq)[1].toFixed(2)];
+        // compact[0].toFixed(2),
+        // compact[1].toFixed(2),
+        "N/A",
+        "N/A",
+        display[0].toFixed(2),
+        display[1].toFixed(2)];
 
     metric2.selectAll(".metricValue").remove();
     metric2.selectAll(".metricValue")
@@ -45,6 +49,7 @@ function getCompactness(allW, layerPath){
 
     var threshold = 1;        // ignore this size of area
 
+    console.log(allW);
     allW.forEach(function (d) {
         allWArea += (d.height * d.width);
         if (d.placed){
@@ -68,7 +73,7 @@ function getDisplayRate(allW, maxFreq){
     var displayNormFreq_2 = 0,    // sum of Normalized Display Freqs
         numbers_2 = 0;       // number of words displayed
 
-    var norm = d3.scale.linear().domain([0, maxFreq]).range([0,1]);
+    var norm = d3.scaleLinear().domain([0, maxFreq]).range([0,1]);
     allW.forEach(function (d) {
         totalFreq_1 += d.frequency;
         if (d.placed){
@@ -138,7 +143,6 @@ function pathToPolygonViaSubdivision(path,threshold,segments){
         return Math.abs(area/2);
     }
 }
-
 
 // Return the area for an SVG <polygon> or <polyline>
 // Self-crossing polys reduce the effective 'area'
