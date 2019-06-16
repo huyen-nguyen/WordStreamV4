@@ -41,12 +41,12 @@ var spinner;
 function loadData() {
     // START: loader spinner settings ****************************
     var opts = {
-        lines: 25, // The number of lines to draw
-        length: 15, // The length of each line
-        width: 5, // The line thickness
-        radius: 25, // The radius of the inner circle
-        color: '#000', // #rgb or #rrggbb or array of colors
-        speed: 2, // Rounds per second
+        lines: 12, // The number of lines to draw
+        length: 18, // The length of each line
+        width: 10, // The line thickness
+        radius: 20, // The radius of the inner circle
+        color: ["#f9b1b6", "#f9e08b", "#95d5ee"], // #rgb or #rrggbb or array of colors
+        speed: 1.5, // Rounds per second
         trail: 50, // Afterglow percentage
         className: 'spinner', // The CSS class to assign to the spinner
     };
@@ -152,7 +152,8 @@ function draw(data) {
     boxes.data.forEach(row => {
         dates.push(row.date);
     });
-
+    let layers = boxes.layers;
+    let firstLayerPeak = d3.min(layers[0], d => d[0]); // get peak
     var xAxisScale = d3.scaleBand().domain(dates).rangeRound([0, width]);
     var xAxis = d3.axisBottom(xAxisScale);
 
@@ -173,7 +174,7 @@ function draw(data) {
     styleGridlineNodes(gridlineNodes);
 
     //Main group
-    mainGroup.attr('transform', 'translate(' + margins.left + ',' + margins.top + ')');
+    mainGroup.attr('transform', 'translate(' + margins.left + ',' + (margins.top - firstLayerPeak) + ')');
     var wordStreamG = mainGroup.append('g').attr("id", "wordStreamG");
 
 // =============== Get BOUNDARY and LAYERPATH ===============

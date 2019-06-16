@@ -2,166 +2,169 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="140e1f28-6c0b-46d1-b831-903931873018" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WSLib/EuroVis19_WordStream.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/EuroVis2019Reviews.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/References/TIARA2012.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/References/TextFlow.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/ResultData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/ResultDataNew.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/CVE20172018CloudDataProcessed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/Cards_Fries.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/Cards_PC.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/CrooksAndLiars.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/EmptyWheel.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/Esquire.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/FactCheck.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/Huffington.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/HuffingtonFrom2009.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/IMDB.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/PopCha.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/QuantumComputing.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/VIS_papers.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/WikiNews.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/extremism copy.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/extremism.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/linksHuff2012.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/outputExtreme.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/quantum.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/test5hrs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/wcloudEmptyWheel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/data/wcloudHuff.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/examples.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/Huffington.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/av.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/flow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/font.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/height.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/1273404841_tick_16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Amex-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Cash-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Discover-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Mastercard-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Paypal-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Visa-56.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-chrome.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-firefox.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-msie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-opera.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-safari.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/button-large.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/demoaction.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/enabled.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/flagssprite_small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/giftlelo_dot_com.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon-search.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_calendar.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_cart.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_cd.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_email.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_faq.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_games.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_lockopen.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_music.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_phone.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_sales.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_secure.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_video.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/jquery-msdropdown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/msDropDown.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/preview.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/sprite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/sprite.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/tick.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/skin1/dd_arrow.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/skin1/title-bg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/skin2/dd_arrow.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/skin2/icon-ok.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/msdropdown/skin2/title-bg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/toprank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/toprank2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/toprank3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/width.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images/ws.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/ACLED.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/Cards_Fries.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/Cards_PC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/CrooksAndLiars.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/EmptyWheel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/Esquire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/FactCheck.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/GTD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/H.E.A.T.Map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/Huffington.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/IMDB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/PopCha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/QuantumComputing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/VIS_papers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/WikiNews.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/javascripts/jquery/jquery-1.9.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/javascripts/jquery/tester.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/javascripts/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/javascripts/metric.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/javascripts/msdropdown/jquery.dd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/javascripts/msdropdown/jquery.dd.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/javascripts/msdropdown/select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/lib/d3-queue.v3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/lib/d3-tip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/lib/d3.layout.cloud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/lib/d3.layout.wordstream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/lib/d3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/lib/d3.slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/lib/d3.v4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/lib/loaddata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/Esquire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/acled_africa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/acled_asia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/acled_me.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/combined.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/crook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/emptywheel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/fact.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/fries.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/gtd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/highlight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/huff.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/imdb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/pc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/popcha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/quantum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/vis.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/wiki.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/media/ws.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/presentation/EuroVis-2019-WS-Slide-video-updated.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/presentation/vid.pptx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/styles/d3.slider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/styles/d3.sliderV1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/styles/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/styles/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/styles/msdropdown/dd.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/styles/msdropdown/flags.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/styles/msdropdown/skin2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/styles/msdropdown/sprite.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/achemedeanspiral.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/buildboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/data.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/drawstream.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/finalboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/nest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/sprite.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/testbuildboxes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/testgetsprite.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/testutil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/test/wordcloud.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WSLib/video.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascripts/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/EuroVis19_WordStream.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/EuroVis2019Reviews.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/References/TIARA2012.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/References/TextFlow.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/ResultData.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/ResultDataNew.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/CVE20172018CloudDataProcessed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/Cards_Fries.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/Cards_PC.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/CrooksAndLiars.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/EmptyWheel.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/Esquire.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/FactCheck.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/Huffington.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/HuffingtonFrom2009.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/IMDB.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/PopCha.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/QuantumComputing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/VIS_papers.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/WikiNews.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/extremism copy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/extremism.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/linksHuff2012.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/outputExtreme.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/quantum.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/test5hrs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/wcloudEmptyWheel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/data/wcloudHuff.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/Huffington.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/av.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/flow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/font.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/height.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/1273404841_tick_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Amex-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Cash-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Discover-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Mastercard-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Paypal-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/Visa-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-chrome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-firefox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-msie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-opera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/browser-safari.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/button-large.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/demoaction.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/enabled.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/flagssprite_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/giftlelo_dot_com.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon-search.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_cart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_cd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_email.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_faq.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_games.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_lockopen.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_music.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_phone.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_sales.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_secure.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/icon_video.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/jquery-msdropdown.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/msDropDown.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/preview.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/sprite.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/sprite.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/icons/tick.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/skin1/dd_arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/skin1/title-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/skin2/dd_arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/skin2/icon-ok.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/msdropdown/skin2/title-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/toprank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/toprank2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/toprank3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/width.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/ws.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images/wslib.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/ACLED.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/Cards_Fries.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/Cards_PC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/CrooksAndLiars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/EmptyWheel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/Esquire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/FactCheck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/GTD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/H.E.A.T.Map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/Huffington.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/IMDB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/PopCha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/QuantumComputing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/VIS_papers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/images2/datasetThumnails/WikiNews.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/javascripts/jquery/jquery-1.9.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/javascripts/jquery/tester.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/javascripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/javascripts/metric.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/javascripts/msdropdown/jquery.dd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/javascripts/msdropdown/jquery.dd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/javascripts/msdropdown/select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/lib/d3-queue.v3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/lib/d3-tip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/lib/d3.layout.cloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/lib/d3.layout.wordstream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/lib/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/lib/d3.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/lib/d3.v4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/lib/loaddata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/Esquire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/acled_africa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/acled_asia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/acled_me.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/combined.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/crook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/emptywheel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/fact.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/fries.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/gtd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/highlight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/huff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/imdb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/pc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/popcha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/quantum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/vis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/wiki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/media/ws.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/presentation/EuroVis-2019-WS-Slide-video-updated.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/presentation/vid.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/styles/d3.slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/styles/d3.sliderV1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/styles/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/styles/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/styles/msdropdown/dd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/styles/msdropdown/flags.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/styles/msdropdown/skin2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/styles/msdropdown/sprite.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/achemedeanspiral.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/buildboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/drawstream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/finalboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/nest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/sprite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/testbuildboxes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/testgetsprite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/testutil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/test/wordcloud.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WSLib/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/d3.layout.wordstream.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/d3.layout.wordstream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/loaddata.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/loaddata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/d3.slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/d3.slider.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -171,34 +174,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/WSLib/javascripts/main.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="960">
-                    <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/WSLib/index.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="72">
-                    <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-785812493">
@@ -277,18 +252,20 @@
     <session id="-1072328996">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="6" />
-          <entry key="html" value="8" />
-          <entry key="js" value="27" />
+          <entry key="html" value="11" />
+          <entry key="js" value="32" />
           <entry key="md" value="1" />
           <entry key="png" value="2" />
           <entry key="tsv" value="1" />
@@ -297,26 +274,26 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="HTML" value="8" />
+          <entry key="HTML" value="11" />
           <entry key="Image" value="2" />
-          <entry key="JavaScript" value="27" />
+          <entry key="JavaScript" value="32" />
           <entry key="Markdown" value="1" />
           <entry key="TSV" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="57" />
+          <entry key="css" value="59" />
           <entry key="html" value="19" />
-          <entry key="js" value="2572" />
+          <entry key="js" value="2716" />
           <entry key="md" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="57" />
+          <entry key="CSS" value="59" />
           <entry key="HTML" value="19" />
-          <entry key="JavaScript" value="2572" />
+          <entry key="JavaScript" value="2716" />
           <entry key="Markdown" value="34" />
         </counts>
       </usages-collector>
@@ -327,8 +304,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+            <state relative-caret-position="115">
+              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/loaddata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -336,12 +322,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="38" column="11" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="11" />
+            <state relative-caret-position="140">
+              <caret line="176" column="106" selection-start-line="176" selection-start-column="106" selection-end-line="176" selection-end-column="106" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#6914#7054#0" />
-                <element signature="e#7136#7317#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/buildboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/d3.layout.wordstream.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3624">
+              <caret line="149" column="11" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -350,8 +355,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/d3.slider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="412" column="8" selection-start-line="412" selection-start-column="8" selection-end-line="412" selection-end-column="8" />
+            <state relative-caret-position="669">
+              <caret line="442" column="11" selection-start-line="442" selection-start-column="11" selection-end-line="442" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -369,7 +374,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>allw</find>
       <find>console.</find>
       <find>init</find>
       <find>gridL</find>
@@ -394,11 +398,12 @@
       <find>mainsvg</find>
       <find>body</find>
       <find>let</find>
-      <find>var</find>
       <find>loadingSpinner</find>
       <find>spinner</find>
       <find>css</find>
       <find>loadin</find>
+      <find>var</find>
+      <find>legendFont</find>
     </findStrings>
     <replaceStrings>
       <replace>data</replace>
@@ -411,10 +416,10 @@
       <replace>suddenScale</replace>
       <replace>d3v4</replace>
       <replace>guantanamo</replace>
-      <replace>let</replace>
       <replace>allW</replace>
       <replace>var</replace>
       <replace>let</replace>
+      <replace>tickFont</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -455,12 +460,8 @@
         <option value="$PROJECT_DIR$/javascripts/update.js" />
         <option value="$PROJECT_DIR$/lib/d3.v4.min.js" />
         <option value="$PROJECT_DIR$/javascripts/init.js" />
-        <option value="$PROJECT_DIR$/lib/loaddata.js" />
-        <option value="$PROJECT_DIR$/lib/d3.layout.wordstream.js" />
         <option value="$PROJECT_DIR$/javascripts/metric.js" />
         <option value="$PROJECT_DIR$/styles/main.css" />
-        <option value="$PROJECT_DIR$/styles/d3.slider.css" />
-        <option value="$PROJECT_DIR$/javascripts/main.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/javascripts/test.js" />
         <option value="$PROJECT_DIR$/test.html" />
@@ -474,6 +475,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/WSLib/index.html" />
         <option value="$PROJECT_DIR$/WSLib/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/lib/d3.layout.wordstream.js" />
+        <option value="$PROJECT_DIR$/javascripts/main.js" />
+        <option value="$PROJECT_DIR$/styles/d3.slider.css" />
+        <option value="$PROJECT_DIR$/lib/loaddata.js" />
       </list>
     </option>
   </component>
@@ -484,7 +489,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1079" />
+    <option name="x" value="356" />
     <option name="y" value="23" />
     <option name="width" value="1246" />
     <option name="height" value="1416" />
@@ -527,18 +532,12 @@
             <path>
               <item name="WordStreamV4" type="b2602c69:ProjectViewProjectNode" />
               <item name="WordStreamV4" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WordStreamV4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WordStreamV4" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WordStreamV4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WordStreamV4" type="462c0819:PsiDirectoryNode" />
-              <item name="WSLib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WordStreamV4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WordStreamV4" type="462c0819:PsiDirectoryNode" />
-              <item name="WSLib" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -689,17 +688,20 @@
       <workItem from="1560355038654" duration="1000" />
       <workItem from="1560355862147" duration="22998000" />
       <workItem from="1560460849106" duration="14165000" />
+      <workItem from="1560527055239" duration="2393000" />
+      <workItem from="1560542452972" duration="1573000" />
+      <workItem from="1560714626728" duration="272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="700633000" />
+    <option name="totallyTimeSpent" value="704871000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1079" y="23" width="1246" height="1416" extended-state="0" />
+    <frame x="356" y="23" width="1246" height="1416" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9411765" visible="true" weight="0.21959184" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9411765" visible="true" weight="0.20081633" />
       <window_info id="Structure" order="1" sideWeight="0.05882353" side_tool="true" weight="0.24725275" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -718,13 +720,13 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9411765" visible="true" weight="0.1764706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9411765" visible="true" weight="0.20081633" />
       <window_info id="Structure" order="1" sideWeight="0.05882353" side_tool="true" weight="0.24725275" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32849503" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32798165" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.26661575" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2169595" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.21636085" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -749,20 +751,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/WSLib/lib/loaddata.js</url>
           <line>82</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/styles/msdropdown/flags.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret column="2992" selection-start-column="2992" selection-end-column="2992" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/msdropdown/skin2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -876,23 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/loaddata.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-872">
-          <caret line="135" column="7" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/d3.layout.wordstream.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="390" column="56" selection-start-line="390" selection-start-column="56" selection-end-line="390" selection-end-column="56" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/metric.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -917,9 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="36" column="6" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -937,69 +911,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/data/IMDB.tsv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WSLib/data/IMDB.tsv" />
     <entry file="file://$PROJECT_DIR$/styles/d3.sliderV1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-88" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/init.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/update.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/util.js">
+    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/init.js" />
+    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/update.js" />
+    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/util.js" />
+    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/test.js" />
+    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/metric.js" />
+    <entry file="file://$PROJECT_DIR$/WSLib/test.html" />
+    <entry file="file://$PROJECT_DIR$/WSLib/styles/d3.slider.css" />
+    <entry file="file://$PROJECT_DIR$/WSLib/images/wslib.png" />
+    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/msdropdown/select.js" />
+    <entry file="file://$PROJECT_DIR$/WSLib/lib/loaddata.js" />
+    <entry file="file://$PROJECT_DIR$/WSLib/styles/main.css" />
+    <entry file="file://$PROJECT_DIR$/WSLib/lib/d3.layout.wordstream.js" />
+    <entry file="file://$PROJECT_DIR$/WSLib/index.html" />
+    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/main.js" />
+    <entry file="file://$PROJECT_DIR$/test/buildboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3753" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/metric.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="620">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/styles/d3.slider.css">
+    <entry file="file://$PROJECT_DIR$/lib/d3.layout.wordstream.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="321" column="6" selection-start-line="321" selection-start-column="6" selection-end-line="321" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/images/wslib.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/msdropdown/select.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/lib/loaddata.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/lib/d3.layout.wordstream.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="3624">
+          <caret line="149" column="11" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -1008,41 +950,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="11" />
+        <state relative-caret-position="140">
+          <caret line="176" column="106" selection-start-line="176" selection-start-column="106" selection-end-line="176" selection-end-column="106" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#6914#7054#0" />
-            <element signature="e#7136#7317#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/d3.slider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="412" column="8" selection-start-line="412" selection-start-column="8" selection-end-line="412" selection-end-column="8" />
+        <state relative-caret-position="669">
+          <caret line="442" column="11" selection-start-line="442" selection-start-column="11" selection-end-line="442" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/loaddata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WSLib/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="115">
+          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
         </state>
       </provider>
     </entry>
