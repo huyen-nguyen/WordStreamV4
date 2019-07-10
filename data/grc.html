@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WordStream</title>
+    <script src="../lib/d3.v4.min.js"></script>
+</head>
+<body>
+<script>
+    // example use
+    // let svg = d3.select("body").append('svg')
+    //     .attr("width", 1000)
+    //     .attr("height", 660);
+    //
+    // let config = {
+    //     topWord: 20,
+    //     minFont: 10,
+    //     maxFont: 30,
+    //     tickFont: 12,
+    //     legendFont: 12,
+    //     curve: d3.curveMonotoneX
+    // };
+
+    const topicName = ["Acting, Comedy & Music", "Media", "Government % Politics", "Others"];
+
+    const topics = ["artist", "media", "politics", "others"];
+    let categorizedData = topics.map(d => {
+
+    });
+    let startYear, endYear;
+    d3.csv("../data/guest.csv", function (error, inputData) {
+        console.log(inputData);
+
+        let base_data = d3.nest()
+                .key(d => d.YEAR)
+                .key(d => d.Group)
+            .entries(inputData)
+            // .sort((a,b) => {
+            //     return a.values.length - b.values.length
+            // })
+        ;
+        console.log(base_data);
+        let data = base_data.map(d => {
+            return {
+                date: d.key,
+                words: {
+                    artist: [],
+                    media: [],
+                    politics: [],
+                    others: []
+                }
+            }
+        });
+        base_data.forEach((yearRecord, i) => {
+            yearRecord.values.forEach((miniTopic, j) => {
+                switch (miniTopic.key) {
+                    case "Acting":
+                        data[i].words.artist = data[i].words.artist.concat(miniTopic.values);
+                        break;
+                }
+            })
+        })
+
+        console.log(data)
+    });
+</script>
+</body>
+</html>

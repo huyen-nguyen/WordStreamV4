@@ -46,7 +46,7 @@ function loadData() {
         width: 10, // The line thickness
         radius: 20, // The radius of the inner circle
         color: ["#f9b1b6", "#f9e08b", "#95d5ee"], // #rgb or #rrggbb or array of colors
-        speed: 1.5, // Rounds per second
+        speed: 2, // Rounds per second
         trail: 50, // Afterglow percentage
         className: 'spinner', // The CSS class to assign to the spinner
     };
